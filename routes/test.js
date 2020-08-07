@@ -9,8 +9,8 @@ router.get('/', function(req, res, next) {
 /* GET home page. */
 router.post('/', function(req, res) {
     console.log(req.body);
-    console.log('www.app=test.js переход');
-    res.send('www.app=test.js переход');
+    console.log('передаем тестовую строку');
+    res.send(JSON.stringify('это тестовая строка на 6000'));
   });
   
 
